@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h3 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f4f4f4;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-column {
+  flex: 1;
+  margin: 0 0.5em;
+}
+
+.skills-column ul {
+  padding: 0;
+}
+
+.skills-column ul li {
+  background: #f4f4f4;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 150px;
+  margin-right: 1em;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.project-info {
+  flex: 1;
+  text-align: left;
+}
+
+.project-info h4 {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.project-links a {
+  flex: 1;
+  color: #1e90ff;
+  text-decoration: none;
+  padding: 0.5em;
+  border: 1px solid #1e90ff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project-links a:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1em;
+  }
+
+  header,
+  footer {
+    padding: 0.5em 0;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .skills-column {
+    margin: 0.5em 0;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card img {
+    margin-right: 0;
+    margin-bottom: 1em;
+    max-width: 100%;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+}
